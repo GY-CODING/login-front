@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/view/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>GY-LOGIN</title>
+</head>
+
+<body style="height: 100vh !important;">
+    <section class="page1">
+        <div class="left-side">
+            <header>
+                <img src="src/view/css/img/gy-logo.png" alt="">
+            </header>
+            <div class="login">
+        
+                <h1 class="login-text">LOGIN</h1>
+                <div class="username-box">
+                    <label for="">Username:</label>
+                    <input class="input-user" placeholder="Introduce el username..." type="text">
+                </div>
+        
+                <div class="password-box">
+                    <label for="">Password:</label>
+                    <input class="input-pass" placeholder="Introduce la contraseña..." type="password">
+                </div>
+                <a style="display: flex;" class="change-option" value="login">I don't have an account: Register</a>
+
+                <button class="login-button">LOGIN</button> 
+            </div>
+        
+            <div class="signUp none">
+                <h1 class="login-text">SIGNUP</h1>
+                <div class="username-box">
+                    <label for="">Username:</label>
+                    <input class="input-user-register" placeholder="Introduce el username..." type="text">
+                </div>
+        
+                <div class="email-box">
+                    <label for="">Email:</label>
+                    <input class="input-email-register" placeholder="Introduce el email..." type="email">
+                </div>
+        
+                <div class="password-box">
+                    <label for="">Password:</label>
+                    <input class="input-pass-register" placeholder="Introduce la contraseña..." type="password">
+                    <input class="input-pass-auth" placeholder="Vuelve a introducir la contraseña..." type="password">
+                </div>
+                <a style="display: none;" class="change-option" value="signup">I already have an account: log in</a>
+                <button class="sign-button"><span class="text">SignUp</span></button>
+
+            </div>
+            <div class="creditos">
+                <p>@GYCODING</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="src/view/css/img/wallpapers/img_4.jpg" alt="" class="imagen parallax" data-value="1    ">
+           
+
+        </div>
+    </section>
+    <script>
+       
+    </script>
+
+    <script src="src/global/global.js"></script>
+    <script src="src/app/app.js" type="module"></script>
+    <script src="src/view/controller/controller.js" type="module"></script>
+
+</body>
+
+</html>
