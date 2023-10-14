@@ -4,6 +4,21 @@
   font-family: Arial;
   font-weight: bold;
 }
+.swal2-popup{
+  background-color: rgba(0, 0, 0, 0.281) !important;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.411) !important;
+
+  color: white !important;
+  border-radius: 20px !important;
+
+}
+.swal2-confirm, .swal2-styled{
+  background-color: #4900a8 !important;
+  transition: .5s !important;
+  border: 2px solid transparent !important;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -130,10 +145,11 @@ input:focus {
   min-height: 50px;
   position: relative;
   border: 2px solid transparent;
+  cursor:pointer;
 
 } 
 
-.login-button::after,.sign-button::after {
+.login-button::after, .sign-button::after {
   content: "";
   position: absolute;
   left: -2%;
@@ -164,10 +180,10 @@ input:focus {
 .login-button:hover::before,
 .login-button:hover::after,
 .sign-button:hover::before,
-.sign-button.hover::after {
+.sign-button:hover::after {
   transition: .7s;
   width: 97%;
-  height: 95%;
+  height: 100%;
   cursor: pointer;
   border-image: linear-gradient(0deg, #6a1b9a, #9c27b0) 1;
   border-radius: 10px;
